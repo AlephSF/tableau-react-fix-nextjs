@@ -2454,7 +2454,7 @@ var ss = global.ss;
           "object"
         ) {
           var queryParams = $tab_UriExtensions.getUriQueryParameters(
-            window?.self?.location?.search
+            window.self.location.search
           );
           if (!ss.keyExists(queryParams, $tab_Logger.$logQueryParam)) {
             return;
