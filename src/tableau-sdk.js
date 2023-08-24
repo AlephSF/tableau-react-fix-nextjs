@@ -168,7 +168,7 @@ var global = {};
       };
 
   if (
-    (typeof window === "undefined" ? "undefined" : _typeof(window)) == "object"
+    (typeof window === "undefined" ? "undefined" : typeof window) == "object"
   ) {
     // Browser-specific stuff that could go into the Web assembly, but that assembly does not have an associated JS file.
     if (!window.Element) {
@@ -222,7 +222,7 @@ var global = {};
 
       return function (obj) {
         if (
-          (typeof obj === "undefined" ? "undefined" : _typeof(obj)) !==
+          (typeof obj === "undefined" ? "undefined" : typeof obj) !==
             "object" &&
           (typeof obj !== "function" || obj === null)
         ) {
@@ -522,7 +522,7 @@ var global = {};
     };
     result.isInstanceOfType = function (instance) {
       return (
-        (typeof instance === "undefined" ? "undefined" : _typeof(instance)) ===
+        (typeof instance === "undefined" ? "undefined" : typeof instance) ===
         (namedValues ? "string" : "number")
       );
     };
@@ -2230,7 +2230,7 @@ var ss = global.ss;
         message,
         args
       ) {
-        if (_typeof(window.console) !== "object") {
+        if (typeof window.console !== "object") {
           return;
         }
         message = source.get_name() + ": " + message;
@@ -2450,7 +2450,7 @@ var ss = global.ss;
       },
       $setupUrlFilters: function Logger$SetupUrlFilters() {
         if (
-          (typeof window === "undefined" ? "undefined" : _typeof(window)) ==
+          (typeof window === "undefined" ? "undefined" : typeof window) ==
           "object"
         ) {
           var queryParams = $tab_UriExtensions.getUriQueryParameters(
@@ -2755,7 +2755,7 @@ var ss = global.ss;
   })();
   (function () {
     if (
-      (typeof window === "undefined" ? "undefined" : _typeof(window)) ==
+      (typeof window === "undefined" ? "undefined" : typeof window) ==
       "object"
     ) {
       $tab_WindowHelper.blank = "_blank";
@@ -3794,7 +3794,7 @@ global.tableauSoftware = global.tableauSoftware || {};
       },
       isDate: function Utility$IsDate(value) {
         if (
-          (typeof value === "undefined" ? "undefined" : _typeof(value)) ===
+          (typeof value === "undefined" ? "undefined" : typeof value ) ===
             "object" &&
           ss.isInstanceOfType(value, ss.JsDate)
         ) {
@@ -6441,7 +6441,7 @@ global.tableauSoftware = global.tableauSoftware || {};
   })();
   (function () {
     if (
-      (typeof window === "undefined" ? "undefined" : _typeof(window)) ==
+      (typeof window === "undefined" ? "undefined" : typeof window) ==
       "object"
     ) {
       var globalState = window["_ApiObjectRegistryGlobalState"];
@@ -14497,7 +14497,7 @@ global.tableauSoftware = global.tableauSoftware || {};
 })();
 
 if (
-  (typeof window === "undefined" ? "undefined" : _typeof(window)) == "object"
+  (typeof window === "undefined" ? "undefined" : typeof window) == "object"
 ) {
   window.tableau = window.tableauSoftware = global.tableauSoftware;
   var tableauSoftware = global.tableauSoftware;
