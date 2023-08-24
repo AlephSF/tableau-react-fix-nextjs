@@ -1,5 +1,6 @@
 # Tableau React Component
-Tableau React component integrated with Tableau JS API.
+Tableau React component integrated with Tableau JS API. Patched to work
+with NextJS.
 
 ## Install
 

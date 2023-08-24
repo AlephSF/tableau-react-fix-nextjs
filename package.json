@@ -1,6 +1,6 @@
 {
-  "name": "tableau-react",
-  "version": "2.2.0",
+  "name": "@aleph/tableau-react",
+  "version": "2.2.1",
   "description": "React component for rendering tableau reports using tableau javascript API.",
   "main": "dist/index.js",
   "files": [
@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/coopermaruyama/tableau-react.git"
+    "url": "git+https://github.com/AlephSF/tableau-react.git"
   },
   "keywords": [
     "tableau",
@@ -25,9 +25,9 @@
   "author": "Cooper Maruyama",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/coopermaruyama/tableau-react/issues"
+    "url": "https://github.com/AlephSF/tableau-react-fix-nextjs/issues"
   },
-  "homepage": "https://github.com/coopermaruyama/tableau-react#readme",
+  "homepage": "https://github.com/AlephSF/tableau-react-fix-nextjs#readme",
   "peerDependencies": {
     "prop-types": "^15.6.0",
     "react": "^15.3.2",
